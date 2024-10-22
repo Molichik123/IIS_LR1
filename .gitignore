@@ -1,3 +1,5 @@
-venv_LR1
+my_venv
 *.csv
 *.pkl
+mlruns.db
+
