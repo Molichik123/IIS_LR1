@@ -2,4 +2,4 @@ my_venv
 *.csv
 *.pkl
 mlruns.db
-
+__pycache__
