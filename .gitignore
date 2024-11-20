@@ -1,5 +1,6 @@
 my_venv
 *.csv
 *.pkl
-mlruns.db
+mlflow/mlartifacts
+mlflow/mlruns.db
 __pycache__

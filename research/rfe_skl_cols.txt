@@ -1,0 +1,1 @@
+['num__age', 'num__education.num', 'num__capital.gain', 'num__capital.loss', 'num__hours.per.week', 'cat__workclass', 'cat__marital.status', 'cat__occupation', 'cat__relationship', 'poly__capital.gain', 'poly__capital.gain^2', 'poly__capital.loss^2']
