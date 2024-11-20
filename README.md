@@ -23,3 +23,9 @@ MAPE - метрика, обозначающая среднюю абсолютн�
 MSE - среднеквадратичная ошибка
 ![Илюстрация MSE](https://github.com/Molichik123/IIS_LR1/raw/LR3/research/MSE.jpg)
 
+Лучшие показатели сделала модель RandomForestClassifier(n_estimators=10, max_depth=6). Её показатели MAE, MAPE и MSE меньше, чем у остальных моделей. Для её обучения использовалась вся выборка.
+
+Run_id данной модели: a36b622aba974664abe71f492ef2e099
+
+
+
