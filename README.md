@@ -11,4 +11,11 @@
 Результаты исследования
 ---
 По результатам исследований были получены следующие метрики качества:
+
+MAE - средняя абсолютная ошибка между предсказанными и реальными значениями
 ![Илюстрация MAE](https://github.com/Molichik123/IIS_LR1/raw/LR3/research/MAE.jpg)
+MAPE - метрика, обозначающая среднюю абсолютную ошибку в процентах.
+![Илюстрация MAPE](https://github.com/Molichik123/IIS_LR1/raw/LR3/research/MAPE.jpg)
+MSE - среднеквадратичная ошибка
+![Илюстрация MSE](https://github.com/Molichik123/IIS_LR1/raw/LR3/research/MSE.jpg)
+
