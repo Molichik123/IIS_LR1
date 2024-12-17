@@ -1,6 +1,6 @@
-my_venv
+*my_venv*
 *.csv
 *.pkl
 mlflow/mlartifacts
 mlflow/mlruns.db
-__pycache__
+*__pycache__*
