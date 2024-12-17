@@ -16,7 +16,7 @@
 
 После старта сервера можно проверить его работоспособность. Для тестирования POST-запросов удобнее всего использовать адрес http://localhost:8001/docs. Чтобы протестировать POST-запрос /api/prediction, нажмите кнопку "try it now" и введите необходимые параметры. В поле employeeid можно указать любое целое число. В качестве тестового тела запроса для поля itemfeatures я использовал следующий JSON:
 
-![Image alt](https://github.com/Molichik123/IIS_LR1/raw/lr4/services/Body request.jpg)
+![Image alt](https://github.com/Molichik123/IIS_LR1/raw/lr4/services/Body_request.jpg)
 
 В итоге на выходе мы получем предсказание, что по входным данным гражданин имеет прибыль > 50000 ("1" = ">50K", "0"= "<50K")
 
