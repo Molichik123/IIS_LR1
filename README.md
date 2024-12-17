@@ -15,9 +15,21 @@
 В папке services/mlservice размещен код для взаимодействия с моделью через FastAPI, а также Dockerfile для создания образа сервиса. Чтобы собрать образ с именем estatemodel, выполните команду: docker build . --tag estate_model:0. Для запуска контейнера с портом 8001 используйте команду: docker run -p 8001:8000 -v $(pwd)/../models:/models estate_model:0. 
 
 После старта сервера можно проверить его работоспособность. Для тестирования POST-запросов удобнее всего использовать адрес http://localhost:8001/docs. Чтобы протестировать POST-запрос /api/prediction, нажмите кнопку "try it now" и введите необходимые параметры. В поле employeeid можно указать любое целое число. В качестве тестового тела запроса для поля itemfeatures я использовал следующий JSON:
-
-![Image alt](https://github.com/Molichik123/IIS_LR1/raw/lr4/services/Body_request.jpg)
-
+    
+{
+"age":35,
+"workclass":"Private",
+"education.num":10,
+"marital.status":"Married-civ-spouse",
+"occupation":"Sales",
+"relationship":"Husband",
+"race":"White",
+"sex":"Male",
+"capital.gain":5000,
+"capital.loss":1000,
+"hours.per.week":60
+}
+    
 В итоге на выходе мы получем предсказание, что по входным данным гражданин имеет прибыль > 50000 ("1" = ">50K", "0"= "<50K")
 
 ![Image alt](https://github.com/Molichik123/IIS_LR1/raw/lr4/services/Result.jpg)
