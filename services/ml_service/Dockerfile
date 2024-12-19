@@ -5,6 +5,8 @@ WORKDIR /app
 
 RUN pip install -r requirenments.txt
 
+
+
 EXPOSE 8000
 VOLUME /models
 

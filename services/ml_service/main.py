@@ -12,7 +12,7 @@ def root_dir():
 
 @app.post('/api/prediction')
 def make_prediction(citizen_id: int, item_features: dict):
-    prediction = app.handler.predict(item_features)
+    prediction = app.handler.predict(citizen_id, item_features)
     return ({
              'income': str(prediction),
              'citizen_id': citizen_id
