@@ -3,7 +3,7 @@ FROM python:3.11-slim
 COPY . /app
 WORKDIR /app
 
-RUN pip install requests
+RUN pip install -r requirenments.txt
 
 CMD ["python3", "req.py"]
 

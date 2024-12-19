@@ -5,17 +5,17 @@ import random
 for i in range(50):
     params = {'citizen_id': i}
     data = {        
-    "age":35,
+    "age":random.randint(20,50),
     "workclass":"Private",
-    "education.num":10,
+    "education.num":random.randint(1,16),
     "marital.status":"Married-civ-spouse",
     "occupation":"Sales",
     "relationship":"Husband",
     "race":"White",
     "sex":"Male",
-    "capital.gain":5000,
-    "capital.loss":1000,
-    "hours.per.week":60
+    "capital.gain":random.randint(2000,20000),
+    "capital.loss":random.randint(1000,4000),
+    "hours.per.week":40
     }
         
     response = requests.post('http://income-predict:8000/api/prediction', params=params, json=data)
